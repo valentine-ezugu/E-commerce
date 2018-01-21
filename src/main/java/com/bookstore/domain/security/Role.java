@@ -4,8 +4,6 @@ import javax.persistence.*;
 import java.util.HashSet;
 import java.util.Set;
 
-//the role persists the database
-
 @Entity
 public class Role {
 

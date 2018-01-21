@@ -77,6 +77,7 @@ public class ShoppingCartController {
             cartItemService.updateCartItem(cartItem);
         return "forward:/shoppingCart/cart";
     }
+
     @RequestMapping("/removeItem")
     public String updateShoppingCartItem( @ModelAttribute("id")Long id){
           cartItemService.removeCartItem(cartItemService.findById(id));
