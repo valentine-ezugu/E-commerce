@@ -6,9 +6,9 @@ import java.util.List;
 import java.util.Map;
 
 public class USConstants {
-    public static final String US = "US";
+    public static  final String US = "US";
 
-    public static final Map<String ,String> mapOfUSStates = new HashMap<String,String>(){
+    public static  final Map<String ,String> mapOfUSStates = new HashMap<String,String>(){
         {
             put("AL", "Alabama");
             put("AK", "Alaska");
@@ -64,7 +64,7 @@ public class USConstants {
         }
 
     };
-    public static final List<String> listOfUSStatesCode = new ArrayList<>(mapOfUSStates.keySet());
-    public static final List<String> listOfUSStatesNames = new ArrayList<>(mapOfUSStates.keySet());
+    public static  final List<String> listOfUSStatesCode = new ArrayList<>(mapOfUSStates.keySet());
+    public static  final List<String> listOfUSStatesNames = new ArrayList<>(mapOfUSStates.keySet());
 
 }

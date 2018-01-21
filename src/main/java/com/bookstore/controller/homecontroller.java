@@ -13,7 +13,6 @@ import com.bookstore.utility.USConstants;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.mail.SimpleMailMessage;
 import org.springframework.mail.javamail.JavaMailSender;
-import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 import org.springframework.security.core.Authentication;
 import org.springframework.security.core.context.SecurityContextHolder;
@@ -22,10 +21,8 @@ import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
-
 import javax.servlet.http.HttpServletRequest;
 import javax.websocket.server.PathParam;
-
 import java.security.Principal;
 import java.util.*;
 
@@ -87,7 +84,7 @@ public class homecontroller {
     }
 
 
-    @RequestMapping("/bookshelf")
+    @RequestMapping( "/bookshelf" )
     public String bookshelf(Model model, Principal principal) {
         if(principal != null) {
             String username = principal.getName();
